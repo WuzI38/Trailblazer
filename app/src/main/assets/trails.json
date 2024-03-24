@@ -1,0 +1,65 @@
+[
+  {
+    "trailName": "Navajo Loop and Queens Garden Trail",
+    "location": "Bryce Canyon National Park",
+    "description": "A moderate trail offering stunning views of the Bryce Canyon National Park.",
+    "stages": [
+      "Start at Sunrise Point",
+      "Descend the Queen's Garden trail",
+      "Reach Queen's Garden",
+      "Follow the trail to Navajo Loop",
+      "Ascend either side of Navajo Loop (Two Bridges or Wall Street) to Sunset Point",
+      "Complete the loop by walking the easy 0.5 mile portion of the Rim Trail back to where you started the hike"
+    ]
+  },
+  {
+    "trailName": "Angels Landing Trail",
+    "location": "Zion National Park",
+    "description": "A hard trail that takes you to a stunning viewpoint in Zion National Park.",
+    "stages": [
+      "Start at The Grotto Trailhead",
+      "Cross a bridge over the Virgin River onto the West Rim Trail",
+      "Navigate a few sets of stone-carved staircases",
+      "Reach Scout Lookout",
+      "Final climb to Angels Landing"
+    ]
+  },
+  {
+    "trailName": "Devil's Bridge Trail via Dry Creek Road",
+    "location": "Coconino National Forest",
+    "description": "A moderate trail leading to a natural sandstone arch in the Coconino National Forest.",
+    "stages": [
+      "Start at the Dry Creek Vista parking area",
+      "Follow the ORV Vultee Arch Road (Forest Road 152) up to the official trailhead",
+      "Hike through washes filled with juniper and prickly pear cactus",
+      "Reach the base of the bridge",
+      "Ascend a natural rock staircase",
+      "Reach the bridge"
+    ]
+  },
+  {
+    "trailName": "Skyline Loop",
+    "location": "Mount Rainier National Park",
+    "description": "A hard trail that offers breathtaking views of Mount Rainier and its surrounding landscapes.",
+    "stages": [
+      "Start at the Jackson Visitor Center",
+      "Follow signage for the Skyline Trail",
+      "Navigate through pine forests",
+      "Ascend the slopes to the base of Mount Rainier",
+      "Reach Panorama Point",
+      "Complete the loop and return to the Jackson Visitor Center"
+    ]
+  },
+  {
+    "trailName": "Emerald Lake Trail",
+    "location": "Rocky Mountain National Park",
+    "description": "A moderate trail that leads to the stunning Emerald Lake in Rocky Mountain National Park.",
+    "stages": [
+      "Start at the Bear Lake Trailhead",
+      "Hike past Myrtle Falls",
+      "Walk through pine forests",
+      "Pass by Nymph Lake and Dream Lakes",
+      "Reach Emerald Lake"
+    ]
+  }
+]
