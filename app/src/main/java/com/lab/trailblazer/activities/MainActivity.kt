@@ -16,6 +16,7 @@ import androidx.compose.ui.Modifier
 import com.lab.trailblazer.json.JsonParser
 import com.lab.trailblazer.ui.theme.TrailblazerTheme
 import java.io.Serializable
+import com.lab.trailblazer.ui.theme.TrailListItem
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -44,10 +45,7 @@ class MainActivity : ComponentActivity() {
 fun TrailList(trailNames: List<String>, onTrailClick: (String) -> Unit) {
     LazyColumn {
         items(trailNames) { trailName ->
-            Text(
-                text = trailName,
-                modifier = Modifier.clickable { onTrailClick(trailName) }
-            )
+            TrailListItem(trailName, onTrailClick)
         }
     }
 }
