@@ -16,3 +16,11 @@ val Typography = Typography(
         letterSpacing = 0.5.sp
     )
 )
+
+// detail green - 01B075
+// background dark - 16171B
+// section dark - 202125
+// light gray - 494A4E
+// text light gray - 909195
+// text white - F7F7F7
+// error - FE4735
