@@ -1,8 +1,130 @@
 [
   {
+    "trailName": "Bear Lake Loop",
+    "location": "Rocky Mountain National Park",
+    "difficulty": "easy",
+    "description": "This is a tranquil trail that takes you on a serene journey around the picturesque Bear Lake. Nestled in the heart of the Rocky Mountain National Park, the trail offers breathtaking views of the surrounding mountains. The well-marked trail is perfect for beginners and families, making it a popular choice for those seeking a peaceful hike in the midst of nature.",
+    "stages": [
+      "Start at the Bear Lake Trailhead",
+      "Follow the well-marked trail",
+      "Enjoy views of the surrounding mountains",
+      "Complete the loop and return to the trailhead"
+    ]
+  },
+  {
+    "trailName": "Sunset Point to Sunrise Point",
+    "location": "Bryce Canyon National Park",
+    "difficulty": "easy",
+    "description": "This trail offers a unique opportunity to witness the stunning beauty of Bryce Canyon National Park. Starting at Sunset Point, the trail follows the Rim Trail, offering panoramic views of the amphitheater. The trail is easy to navigate, making it ideal for hikers of all levels. The highlight of the hike is reaching Sunrise Point, where you can enjoy an unforgettable sunrise.",
+    "stages": [
+      "Start at Sunset Point",
+      "Follow the Rim Trail",
+      "Enjoy panoramic views of the amphitheater",
+      "Reach Sunrise Point",
+      "Return to Sunset Point along the same path"
+    ]
+  },
+  {
+    "trailName": "Taggart Lake Trail",
+    "location": "Grand Teton National Park",
+    "difficulty": "easy",
+    "description": "This trail is a delightful journey leading to the beautiful Taggart Lake. Located in Grand Teton National Park, the trail takes you through lush forests and meadows, offering a glimpse of the park’s diverse flora and fauna. The highlight of the trail is reaching Taggart Lake, a serene spot perfect for a picnic or a quiet moment of reflection.",
+    "stages": [
+      "Start at the Taggart Lake Trailhead",
+      "Follow the trail through forests and meadows",
+      "Reach Taggart Lake",
+      "Return to the trailhead along the same path"
+    ]
+  },
+  {
+    "trailName": "Lower Emerald Pool Trail",
+    "location": "Zion National Park",
+    "difficulty": "easy",
+    "description": "This trail takes you on an enchanting journey to a beautiful waterfall. Starting at the Zion Lodge, the trail crosses the Virgin River and leads you to the Lower Emerald Pool. The waterfall is a sight to behold, and the trail offers several spots to relax and enjoy the view.",
+    "stages": [
+      "Start at the Zion Lodge",
+      "Follow the trail across the Virgin River",
+      "Reach the Lower Emerald Pool",
+      "Return to the lodge along the same path"
+    ]
+  },
+  {
+    "trailName": "Baring Falls",
+    "location": "Glacier National Park",
+    "difficulty": "easy",
+    "description": "This trail is a scenic journey leading to the stunning Baring Falls. Starting at the Sunrift Gorge parking area, the trail takes you through a dense forest, offering a glimpse of the park’s rich biodiversity. The highlight of the trail is reaching Baring Falls, a majestic waterfall that is sure to leave you in awe.",
+    "stages": [
+      "Start at the Sunrift Gorge parking area",
+      "Follow the trail through a forest",
+      "Reach Baring Falls",
+      "Return to the parking area along the same path"
+    ]
+  },
+  {
+    "trailName": "General Sherman Tree Trail",
+    "location": "Sequoia National Park",
+    "difficulty": "easy",
+    "description": "This trail takes you on a journey to the world’s largest tree, the General Sherman Tree. The trail is well-marked and easy to follow, making it suitable for hikers of all levels. The highlight of the trail is reaching the General Sherman Tree, a magnificent sight that is sure to leave you in awe.",
+    "stages": [
+      "Start at the Main Parking Area",
+      "Follow the well-marked trail",
+      "Reach the General Sherman Tree",
+      "Return to the parking area along the same path"
+    ]
+  },
+  {
+    "trailName": "Delicate Arch Viewpoint Trail",
+    "location": "Arches National Park",
+    "difficulty": "easy",
+    "description": "This trail offers a unique opportunity to view the famous Delicate Arch. The trail starts at the Delicate Arch Viewpoint parking area and leads you to a viewpoint offering stunning views of the arch. The trail is easy to navigate, making it ideal for hikers of all levels.",
+    "stages": [
+      "Start at the Delicate Arch Viewpoint parking area",
+      "Follow the trail to the viewpoint",
+      "Enjoy views of Delicate Arch",
+      "Return to the parking area along the same path"
+    ]
+  },
+  {
+    "trailName": "Cliff Palace Loop",
+    "location": "Mesa Verde National Park",
+    "difficulty": "easy",
+    "description": "This trail offers stunning views of the largest cliff dwelling in North America, the Cliff Palace. The trail starts at the Cliff Palace parking area and follows a loop trail, offering panoramic views of the Cliff Palace. The trail is easy to navigate, making it suitable for hikers of all levels.",
+    "stages": [
+      "Start at the Cliff Palace parking area",
+      "Follow the loop trail",
+      "Enjoy views of Cliff Palace",
+      "Complete the loop and return to the parking area"
+    ]
+  },
+  {
+    "trailName": "Pinnacle Peak",
+    "location": "Mount Rainier National Park",
+    "difficulty": "easy",
+    "description": "This trail offers stunning views of Mount Rainier and its surrounding landscapes. The trail starts at the Pinnacle Peak Trailhead and leads you to a saddle offering panoramic views. The trail is well-marked and easy to navigate, making it ideal for hikers of all levels.",
+    "stages": [
+      "Start at the Pinnacle Peak Trailhead",
+      "Follow the trail to the saddle",
+      "Enjoy panoramic views",
+      "Return to the trailhead along the same path"
+    ]
+  },
+  {
+    "trailName": "Grotto Falls Trail",
+    "location": "Great Smoky Mountains National Park",
+    "difficulty": "easy",
+    "description": "This trail takes you on a journey to a beautiful waterfall that you can walk behind. Starting at the Trillium Gap Trailhead, the trail takes you through an old-growth hemlock forest, offering a glimpse of the park’s rich biodiversity. The highlight of the trail is reaching Grotto Falls, a sight that is sure to leave you in awe.",
+    "stages": [
+      "Start at the Trillium Gap Trailhead",
+      "Follow the trail through an old-growth hemlock forest",
+      "Reach Grotto Falls",
+      "Return to the trailhead along the same path"
+    ]
+  },
+  {
     "trailName": "Navajo Loop and Queens Garden Trail",
     "location": "Bryce Canyon National Park",
-    "description": "A moderate trail offering stunning views of the Bryce Canyon National Park.",
+    "difficulty": "medium",
+    "description": "This moderate trail offers a unique opportunity to explore the stunning Bryce Canyon National Park. Starting at Sunrise Point, the trail descends the Queen’s Garden trail, leading you to the heart of the park. You’ll then follow the trail to Navajo Loop, ascending either side of the loop to Sunset Point. The trail offers breathtaking views of the park’s unique geological formations, making it a must-see for any visitor.",
     "stages": [
       "Start at Sunrise Point",
       "Descend the Queen's Garden trail",
@@ -15,7 +137,8 @@
   {
     "trailName": "Angels Landing Trail",
     "location": "Zion National Park",
-    "description": "A hard trail that takes you to a stunning viewpoint in Zion National Park.",
+    "difficulty": "medium",
+    "description": "This challenging trail takes you on an exhilarating journey to a stunning viewpoint in Zion National Park. Starting at The Grotto Trailhead, you’ll cross a bridge over the Virgin River onto the West Rim Trail. After navigating a few sets of stone-carved staircases, you’ll reach Scout Lookout. From there, it’s a final climb to Angels Landing, where you’ll be rewarded with panoramic views of the park.",
     "stages": [
       "Start at The Grotto Trailhead",
       "Cross a bridge over the Virgin River onto the West Rim Trail",
@@ -27,7 +150,8 @@
   {
     "trailName": "Devil's Bridge Trail via Dry Creek Road",
     "location": "Coconino National Forest",
-    "description": "A moderate trail leading to a natural sandstone arch in the Coconino National Forest.",
+    "difficulty": "medium",
+    "description": "This moderate trail leads you to a natural sandstone arch in the Coconino National Forest. Starting at the Dry Creek Vista parking area, you’ll follow the ORV Vultee Arch Road up to the official trailhead. The trail takes you through washes filled with juniper and prickly pear cactus, eventually leading you to the base of the bridge. A natural rock staircase ascends to the bridge, offering a unique photo opportunity.",
     "stages": [
       "Start at the Dry Creek Vista parking area",
       "Follow the ORV Vultee Arch Road (Forest Road 152) up to the official trailhead",
@@ -40,7 +164,8 @@
   {
     "trailName": "Skyline Loop",
     "location": "Mount Rainier National Park",
-    "description": "A hard trail that offers breathtaking views of Mount Rainier and its surrounding landscapes.",
+    "difficulty": "medium",
+    "description": "This challenging trail offers breathtaking views of Mount Rainier and its surrounding landscapes. Starting at the Jackson Visitor Center, you’ll follow signage for the Skyline Trail, navigating through pine forests and ascending the slopes to the base of Mount Rainier. Upon reaching Panorama Point, you’ll be treated to panoramic views of the park. The loop concludes with a return to the Jackson Visitor Center.",
     "stages": [
       "Start at the Jackson Visitor Center",
       "Follow signage for the Skyline Trail",
@@ -53,13 +178,202 @@
   {
     "trailName": "Emerald Lake Trail",
     "location": "Rocky Mountain National Park",
-    "description": "A moderate trail that leads to the stunning Emerald Lake in Rocky Mountain National Park.",
+    "difficulty": "medium",
+    "description": "This moderate trail leads you to the stunning Emerald Lake in Rocky Mountain National Park. Starting at the Bear Lake Trailhead, you’ll hike past Myrtle Falls and walk through pine forests. The trail passes by Nymph Lake and Dream Lakes before finally reaching Emerald Lake. The serene lake, surrounded by towering peaks, offers a peaceful retreat for hikers.",
     "stages": [
       "Start at the Bear Lake Trailhead",
       "Hike past Myrtle Falls",
       "Walk through pine forests",
       "Pass by Nymph Lake and Dream Lakes",
       "Reach Emerald Lake"
+    ]
+  },
+  {
+    "trailName": "Half Dome Trail",
+    "location": "Yosemite National Park",
+    "difficulty": "medium",
+    "description": "This challenging trail leads you to the top of Half Dome, offering panoramic views of Yosemite Valley and the Sierra Nevada. Starting at the Happy Isles trailhead, you’ll hike to Vernal Fall and Nevada Fall before continuing to Little Yosemite Valley. From there, you’ll ascend the subdome and the Half Dome cables to reach the top of Half Dome. The trail concludes with a return to the trailhead along the same path.",
+    "stages": [
+      "Start at the Happy Isles trailhead",
+      "Hike to Vernal Fall and Nevada Fall",
+      "Continue to Little Yosemite Valley",
+      "Ascend the subdome and the Half Dome cables",
+      "Reach the top of Half Dome",
+      "Return to the trailhead along the same path"
+    ]
+  },
+  {
+    "trailName": "Bright Angel Trail",
+    "location": "Grand Canyon National Park",
+    "difficulty": "medium",
+    "description": "This challenging trail descends into the Grand Canyon, offering stunning views of the canyon’s layers. Starting at the Bright Angel Trailhead, you’ll descend through a series of switchbacks, passing by the 1.5 Mile Resthouse and 3 Mile Resthouse. Upon reaching Indian Garden, you can continue to Plateau Point for views of the Colorado River before returning to the trailhead along the same path.",
+    "stages": [
+      "Start at the Bright Angel Trailhead",
+      "Descend through a series of switchbacks",
+      "Pass by the 1.5 Mile Resthouse and 3 Mile Resthouse",
+      "Reach Indian Garden",
+      "Continue to Plateau Point for views of the Colorado River",
+      "Return to the trailhead along the same path"
+    ]
+  },
+  {
+    "trailName": "Highline Trail",
+    "location": "Glacier National Park",
+    "difficulty": "medium",
+    "description": "This challenging trail traverses the Garden Wall, offering panoramic views of Glacier National Park. Starting at the Logan Pass Visitor Center, you’ll follow the trail along the Garden Wall to reach the Granite Park Chalet. From there, you’ll continue to The Loop trailhead and take the shuttle back to Logan Pass.",
+    "stages": [
+      "Start at the Logan Pass Visitor Center",
+      "Follow the trail along the Garden Wall",
+      "Reach the Granite Park Chalet",
+      "Continue to The Loop trailhead",
+      "Take the shuttle back to Logan Pass"
+    ]
+  },
+  {
+    "trailName": "Mist Trail",
+    "location": "Yosemite National Park",
+    "difficulty": "medium",
+    "description": "This challenging trail leads you to Vernal Fall and Nevada Fall, offering stunning views of both waterfalls. Starting at the Happy Isles trailhead, you’ll hike to the Vernal Fall Footbridge before continuing to the top of Vernal Fall. From there, you’ll hike to the top of Nevada Fall. The trail concludes with a return to the trailhead along the John Muir Trail.",
+    "stages": [
+      "Start at the Happy Isles trailhead",
+      "Hike to the Vernal Fall Footbridge",
+      "Continue to the top of Vernal Fall",
+      "Hike to the top of Nevada Fall",
+      "Return to the trailhead along the John Muir Trail"
+    ]
+  },
+  {
+    "trailName": "Rim Trail",
+    "location": "Grand Canyon National Park",
+    "difficulty": "medium",
+    "description": "Rim Trail: This moderate trail follows the rim of the Grand Canyon, offering stunning views of the canyon. You can start at any viewpoint along Hermit Road or Desert View Drive and follow the trail along the rim. The trail offers panoramic views of the Grand Canyon, making it a great option for those looking to experience the grandeur of the canyon.",
+    "stages": [
+      "Start at any viewpoint along Hermit Road or Desert View Drive",
+      "Follow the trail along the rim",
+      "Enjoy panoramic views of the Grand Canyon",
+      "Return to your starting point or take the shuttle to another viewpoint"
+    ]
+  },
+  {
+    "trailName": "Grand Canyon Rim-to-Rim",
+    "location": "Grand Canyon National Park",
+    "difficulty": "hard",
+    "description": "This challenging trail offers an unforgettable journey across the Grand Canyon from the North Rim to the South Rim. Starting at the North Kaibab Trailhead, you’ll descend into the depths of the canyon, hiking along the mighty Colorado River. The trail then ascends to the South Rim via the Bright Angel Trail, offering a diverse and breathtaking perspective of the Grand Canyon’s geological wonders.",
+    "stages": [
+      "Start at the North Kaibab Trailhead",
+      "Descend into the canyon",
+      "Hike along the Colorado River",
+      "Ascend to the South Rim via the Bright Angel Trail"
+    ]
+  },
+  {
+    "trailName": "Mount Whitney Trail",
+    "location": "Sequoia National Park",
+    "difficulty": "hard",
+    "description": "This challenging trail leads you to the summit of Mount Whitney, the highest peak in the contiguous United States. Starting at the Whitney Portal, you’ll hike through the Whitney Zone, ascending the 99 Switchbacks, a test of endurance and determination. Upon reaching the summit of Mount Whitney, you’ll be rewarded with panoramic views of the Sierra Nevada.",
+    "stages": [
+      "Start at the Whitney Portal",
+      "Hike through the Whitney Zone",
+      "Ascend the 99 Switchbacks",
+      "Reach the summit of Mount Whitney"
+    ]
+  },
+  {
+    "trailName": "John Muir Trail",
+    "location": "Yosemite National Park",
+    "difficulty": "hard",
+    "description": "This long-distance trail winds through the Sierra Nevada, offering stunning views of alpine and high mountain scenery. Starting at Happy Isles in Yosemite Valley, you’ll hike through the Ansel Adams Wilderness, continuing through Kings Canyon and Sequoia National Parks. The trail finishes at Mount Whitney, the highest peak in the contiguous United States, offering a sense of accomplishment and awe-inspiring views.",
+    "stages": [
+      "Start at Happy Isles in Yosemite Valley",
+      "Hike through the Ansel Adams Wilderness",
+      "Continue through Kings Canyon and Sequoia National Parks",
+      "Finish at Mount Whitney, the highest peak in the contiguous United States"
+    ]
+  },
+  {
+    "trailName": "Longs Peak Keyhole Route",
+    "location": "Rocky Mountain National Park",
+    "difficulty": "hard",
+    "description": "This challenging trail leads to the summit of Longs Peak, the highest peak in Rocky Mountain National Park. Starting at the Longs Peak Trailhead, you’ll hike to the Boulder Field, navigating the Keyhole, a unique rock formation. From there, you’ll ascend the Trough, traverse the Narrows, and climb the Homestretch to the summit, where you’ll be rewarded with panoramic views of the park.",
+    "stages": [
+      "Start at the Longs Peak Trailhead",
+      "Hike to the Boulder Field",
+      "Navigate the Keyhole",
+      "Ascend the Trough, traverse the Narrows, and climb the Homestretch to the summit"
+    ]
+  },
+  {
+    "trailName": "Wonderland Trail",
+    "location": "Mount Rainier National Park",
+    "difficulty": "hard",
+    "description": "This long-distance trail circles Mount Rainier, offering stunning views of the mountain and its surrounding landscapes. You can start at any of the trailheads along the loop, hiking through lowland forests and valleys, ascending and descending many ridges. Completing the loop at your starting point, you’ll have experienced a diverse range of ecosystems and breathtaking views.",
+    "stages": [
+      "Start at any of the trailheads along the loop",
+      "Hike through lowland forests and valleys",
+      "Ascend and descend many ridges",
+      "Complete the loop at your starting point"
+    ]
+  },
+  {
+    "trailName": "Mount Elbert Trail",
+    "location": "San Isabel National Forest",
+    "difficulty": "hard",
+    "description": "This challenging trail leads to the summit of Mount Elbert, the highest peak in Colorado. Starting at the North Mount Elbert Trailhead, you’ll hike through the forest on a well-maintained trail, reaching the treeline and continuing on the rocky trail. Navigating a series of switchbacks to reach the summit, you’ll enjoy panoramic views from the top of Colorado.",
+    "stages": [
+      "Start at the North Mount Elbert Trailhead",
+      "Hike through the forest on a well-maintained trail",
+      "Reach the treeline and continue on the rocky trail",
+      "Navigate a series of switchbacks to reach the summit",
+      "Enjoy panoramic views from the top of Colorado",
+      "Return to the trailhead along the same path"
+    ]
+  },
+  {
+    "trailName": "Zion Narrows Top-Down Route",
+    "location": "Zion National Park",
+    "difficulty": "hard",
+    "description": "This challenging trail takes you through the narrowest section of Zion Canyon. Starting at Chamberlain’s Ranch, you’ll hike down the North Fork of the Virgin River, navigating through the Narrows, a dramatic slot canyon. The trail finishes at the Temple of Sinawava, offering a unique and unforgettable hiking experience.",
+    "stages": [
+      "Start at Chamberlain's Ranch",
+      "Hike down the North Fork of the Virgin River",
+      "Navigate through the Narrows",
+      "Finish at the Temple of Sinawava"
+    ]
+  },
+  {
+    "trailName": "Four Pass Loop",
+    "location": "Maroon Bells-Snowmass Wilderness",
+    "difficulty": "hard",
+    "description": "This challenging loop trail takes you over four mountain passes, offering stunning views of the Elk Mountains. Starting at Maroon Lake, you’ll hike over West Maroon Pass, Frigid Air Pass, Trail Rider Pass, and Buckskin Pass. Completing the loop at Maroon Lake, you’ll have experienced a diverse range of landscapes and breathtaking mountain views.",
+    "stages": [
+      "Start at Maroon Lake",
+      "Hike over West Maroon Pass, Frigid Air Pass, Trail Rider Pass, and Buckskin Pass",
+      "Complete the loop at Maroon Lake"
+    ]
+  },
+  {
+    "trailName": "Mount Katahdin Knife Edge Trail",
+    "location": "Baxter State Park",
+    "difficulty": "hard",
+    "description": "This challenging trail leads to the summit of Mount Katahdin, the highest peak in Maine. Starting at Roaring Brook Campground, you’ll hike to Chimney Pond, ascending the Dudley Trail to Pamola Peak. From there, you’ll traverse the Knife Edge to Baxter Peak, offering a thrilling and unforgettable hiking experience.",
+    "stages": [
+      "Start at Roaring Brook Campground",
+      "Hike to Chimney Pond",
+      "Ascend the Dudley Trail to Pamola Peak",
+      "Traverse the Knife Edge to Baxter Peak"
+    ]
+  },
+  {
+    "trailName": "Rae Lakes Loop",
+    "location": "Kings Canyon National Park",
+    "difficulty": "hard",
+    "description": "This challenging loop trail takes you through some of the most stunning scenery in the Sierra Nevada. Starting at Roads End, you’ll hike through Paradise Valley, ascending to Rae Lakes. Crossing Glen Pass, you’ll complete the loop at Roads End, having experienced a diverse range of landscapes and breathtaking mountain views.",
+    "stages": [
+      "Start at Roads End",
+      "Hike through Paradise Valley",
+      "Ascend to Rae Lakes",
+      "Cross Glen Pass",
+      "Complete the loop at Roads End"
     ]
   }
 ]

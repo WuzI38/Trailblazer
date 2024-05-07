@@ -13,6 +13,6 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "Trailblazer"
+rootProject.name = "TrailblazerApp"
 include(":app")
  
