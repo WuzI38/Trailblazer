@@ -30,6 +30,7 @@ class DatabaseHelper(context: Context) : SQLiteOpenHelper(context, DATABASE_NAME
         onCreate(db)
     }
 
+    // Insert new timer record to the database
     fun addRecord(record: Record) {
         val db = this.writableDatabase
         val values = ContentValues()
@@ -41,12 +42,22 @@ class DatabaseHelper(context: Context) : SQLiteOpenHelper(context, DATABASE_NAME
         db.close()
     }
 
+    // Delete single timer record from the database
     fun deleteRecord(id: Int) {
         val db = this.writableDatabase
         db.delete(TABLE_NAME, "$KEY_ID=?", arrayOf(id.toString()))
         db.close()
     }
 
+    // Currently unused - delete all timer records from the record database
+    @Suppress("unused")
+    fun deleteAllRecords() {
+        val db = this.writableDatabase
+        db.delete(TABLE_NAME, null, null)
+        db.close()
+    }
+
+    // Used to get and display all data from the database
     @SuppressLint("Range")
     fun getAllRecords(): List<Record> {
         val db = this.readableDatabase

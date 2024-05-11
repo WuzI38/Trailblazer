@@ -16,6 +16,7 @@ import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.unit.dp
 
+// The layout of navigation drawer item
 @Composable
 fun DrawerItem(
     icon: ImageVector,

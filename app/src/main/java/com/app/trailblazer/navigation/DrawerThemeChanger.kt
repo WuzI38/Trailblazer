@@ -8,6 +8,7 @@ import androidx.compose.runtime.getValue
 import androidx.compose.runtime.livedata.observeAsState
 import com.app.trailblazer.activities.ThemeViewModel
 
+// Toggle theme and save it in ThemeViewModel
 @Composable
 fun DrawerThemeChanger(viewModel: ThemeViewModel) {
     val darkTheme by viewModel.darkTheme.observeAsState(initial = false)

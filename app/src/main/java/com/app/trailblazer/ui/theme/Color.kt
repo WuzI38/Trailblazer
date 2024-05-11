@@ -2,6 +2,7 @@ package com.app.trailblazer.ui.theme
 
 import androidx.compose.ui.graphics.Color
 
+// Color definitions
 val MainGreen = Color(0xFF01B075)
 
 val BackgroundDarkGrey = Color(0xFF16171B)

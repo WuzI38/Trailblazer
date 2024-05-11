@@ -66,6 +66,8 @@ dependencies {
     implementation("androidx.compose.material:material-icons-extended:1.6.6")
     implementation("com.google.code.gson:gson:2.10")
     implementation("com.google.accompanist:accompanist-pager:0.20.2")
+    implementation("androidx.core:core-splashscreen:1.0.1")
+    implementation("com.google.accompanist:accompanist-permissions:0.33.2-alpha")
     testImplementation("junit:junit:4.13.2")
     androidTestImplementation("androidx.test.ext:junit:1.1.5")
     androidTestImplementation("androidx.test.espresso:espresso-core:3.5.1")

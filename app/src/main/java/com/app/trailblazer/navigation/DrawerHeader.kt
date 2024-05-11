@@ -23,6 +23,7 @@ import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.unit.dp
 import com.app.trailblazer.R
 
+// Navigation drawer logo layout
 @Composable
 fun DrawerHeader() {
     val image: Painter = painterResource(id = R.drawable.logo)

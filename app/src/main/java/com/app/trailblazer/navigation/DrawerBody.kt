@@ -7,6 +7,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.text.TextStyle
 
+// List if navigation drawer items
 @Composable
 fun DrawerBody(
     items: List<MenuItem>,

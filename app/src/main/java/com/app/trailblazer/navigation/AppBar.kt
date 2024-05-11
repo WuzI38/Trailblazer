@@ -8,6 +8,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.text.TextStyle
 
+// Application navigation bar
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun AppBar(

@@ -1,5 +1,6 @@
 package com.app.trailblazer.activities
 
+import android.Manifest
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
@@ -26,7 +27,6 @@ import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.ModalDrawerSheet
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.livedata.observeAsState
-import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.platform.LocalFocusManager
@@ -36,15 +36,29 @@ import com.app.trailblazer.navigation.DrawerHeader
 import com.app.trailblazer.navigation.DrawerThemeChanger
 import com.app.trailblazer.navigation.MenuItem
 import android.annotation.SuppressLint
+import android.content.Intent
+import android.provider.MediaStore
+import android.widget.Toast
+import androidx.activity.compose.rememberLauncherForActivityResult
+import androidx.activity.result.contract.ActivityResultContracts
+import androidx.compose.animation.core.tween
 import androidx.compose.foundation.ExperimentalFoundationApi
 import androidx.compose.foundation.pager.rememberPagerState
 import androidx.compose.material.icons.automirrored.filled.ArrowBack
+import androidx.compose.material.icons.filled.Camera
 import androidx.compose.material.icons.filled.Menu
+import androidx.compose.material3.FloatingActionButton
+import androidx.compose.material3.Icon
 import androidx.compose.runtime.LaunchedEffect
-import androidx.compose.runtime.setValue
+import androidx.compose.runtime.collectAsState
+import androidx.compose.runtime.snapshotFlow
+import androidx.core.splashscreen.SplashScreen.Companion.installSplashScreen
 import com.app.trailblazer.content.MainPage
 import com.app.trailblazer.content.TimerPage
 import com.app.trailblazer.content.TrailPage
+import com.google.accompanist.permissions.ExperimentalPermissionsApi
+import com.google.accompanist.permissions.PermissionStatus
+import com.google.accompanist.permissions.rememberPermissionState
 
 
 class MainActivity : ComponentActivity() {
@@ -53,42 +67,85 @@ class MainActivity : ComponentActivity() {
     private val timerViewModel: TimerViewModel by viewModels()
 
     @SuppressLint("UnusedMaterial3ScaffoldPaddingParameter", "DiscouragedApi")
-    @OptIn(ExperimentalFoundationApi::class)
+    @OptIn(ExperimentalFoundationApi::class, ExperimentalPermissionsApi::class)
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+
+        // Display splash screen (works for api >= 31)
+        installSplashScreen().apply {
+            setKeepOnScreenCondition {
+                !viewModel.isReady.value
+            }
+        }
+
         setContent {
+            // Is navigation drawer opened
             val drawerState = rememberDrawerState(initialValue = DrawerValue.Closed)
+            // Drawer coroutine scope
             val scope = rememberCoroutineScope()
+            // Change theme
             val darkTheme by themeViewModel.darkTheme.observeAsState(initial = false)
+            // Set search field focus
             val focusManager = LocalFocusManager.current
+            // Trail list after filtration
             val filteredTrails by viewModel.filteredTrails.observeAsState()
+            // All trails in the list
             val trails by viewModel.filteredTrails.observeAsState(emptyList())
+            // Navigation (which page is currently displayed)
             val viewState by viewModel.viewState.observeAsState(MainActivityViewModel.ViewState.HOME)
-            val trailIndex by viewModel.trailIndex.observeAsState(0)
+            // Which trail is currently displayed
+            val trailIndex by viewModel.trailIndex.collectAsState()
+            // Horizontal pager state
             val pagerState = rememberPagerState(pageCount = { trails.size })
-            var trailName by remember { mutableStateOf("") }
+            // Trail name displayed inside the navigation bar
+            val currentTrailName by viewModel.currentTrailName.collectAsState()
+
+            // Change appbar text depending of the mode
             val appBarText = when (viewState) {
                 MainActivityViewModel.ViewState.HOME -> "Trailblazer"
                 MainActivityViewModel.ViewState.TIMER -> "Timer"
-                else -> trailName
+                else -> currentTrailName
             }
+
+            // Set font to lower size for longer names
             val style = when {
                 appBarText.length in 23..32 -> MaterialTheme.typography.titleMedium
                 appBarText.length > 32 -> MaterialTheme.typography.titleSmall
                 else -> MaterialTheme.typography.titleLarge
             }
 
+            // Update current page of horizontal pager whenever a new trail is chosen by the user
             LaunchedEffect(trailIndex) {
-                pagerState.scrollToPage(trailIndex)
-                trailName = trails.getOrNull(pagerState.currentPage)?.trailName ?: ""
+                pagerState.animateScrollToPage(trailIndex, animationSpec = tween(durationMillis = 0))
             }
 
-            LaunchedEffect(pagerState.currentPage) {
-                trailName = trails.getOrNull(pagerState.currentPage)?.trailName ?: ""
+            // Update name while scrolling
+            LaunchedEffect(pagerState) {
+                snapshotFlow { pagerState.currentPage }.collect { currentPage ->
+                    val trail = trails.getOrNull(currentPage)
+                    if (trail != null) {
+                        viewModel.setTrailName(trail.trailName)
+                    }
+                }
             }
 
             TrailblazerAppTheme(darkTheme = darkTheme) {
+                // Check camera permissions
+                val cameraPermission = Manifest.permission.CAMERA
+                val permissionState = rememberPermissionState(cameraPermission)
+                val launcher = rememberLauncherForActivityResult(
+                    ActivityResultContracts.RequestPermission()
+                ) { isGranted ->
+                    if (isGranted) {
+                        Toast.makeText(this, "Camera permission was granted", Toast.LENGTH_SHORT).show()
+                        val intent = Intent(MediaStore.ACTION_IMAGE_CAPTURE)
+                        this.startActivity(intent)
+                    } else {
+                        Toast.makeText(this, "Camera permission is required", Toast.LENGTH_SHORT).show()
+                    }
+                }
                 ModalNavigationDrawer(
+                    // Define list of navigation drawer elements
                     modifier = Modifier.fillMaxSize(),
                     drawerState = drawerState,
                     drawerContent = {
@@ -127,6 +184,7 @@ class MainActivity : ComponentActivity() {
                                         icon = Icons.Default.Schedule
                                     ),
                                 ),
+                                // Define action of clicked elements
                                 onItemClick = { item ->
                                     scope.launch {
                                         drawerState.close()
@@ -152,6 +210,7 @@ class MainActivity : ComponentActivity() {
                     }
                 ) {
                     Scaffold(
+                        // Set top bar and change its content (based on view state)
                         topBar = {
                             AppBar(
                                 appBarText = appBarText,
@@ -173,6 +232,26 @@ class MainActivity : ComponentActivity() {
                             indication = null,
                             interactionSource = remember { MutableInteractionSource() }
                         ) { focusManager.clearFocus() },
+                        // Add camera FAB, launch camera if permissions are granted
+                        floatingActionButton = {
+                            if(viewModel.viewState.value != MainActivityViewModel.ViewState.TIMER) {
+                                FloatingActionButton(
+                                    onClick = {
+                                        if (permissionState.status is PermissionStatus.Granted) {
+                                            val intent = Intent(MediaStore.ACTION_IMAGE_CAPTURE)
+                                            this.startActivity(intent)
+                                        } else {
+                                            launcher.launch(cameraPermission)
+                                        }
+                                    },
+                                    containerColor = MaterialTheme.colorScheme.primary,
+                                    contentColor = MaterialTheme.colorScheme.background
+                                ) {
+                                    Icon(Icons.Default.Camera, contentDescription = "Open Camera")
+                                }
+                            }
+                        }
+                        // Display correct page (also based on view state)
                     ) { contentPadding ->
                         when (viewModel.viewState.value) {
                             MainActivityViewModel.ViewState.HOME -> {

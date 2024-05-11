@@ -35,7 +35,7 @@ private val LightColorScheme = lightColorScheme(
     error = ErrorRed,
 )
 
-
+// By default it is set to Dark Color Scheme in the app
 @Composable
 fun TrailblazerAppTheme(
     darkTheme: Boolean = isSystemInDarkTheme(),

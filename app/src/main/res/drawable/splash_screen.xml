@@ -1,0 +1,23 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:width="200dp"
+    android:height="200dp"
+    android:viewportWidth="240"
+    android:viewportHeight="240">
+    <group
+        android:name="animationGroup"
+        android:pivotX="120"
+        android:pivotY="120">
+        <path
+            android:pathData="M120,120m-80,0a80,80 0,1 1,160 0a80,80 0,1 1,-160 0"
+            android:fillColor="#01B075"/>
+        <group>
+            <clip-path
+                android:pathData="M120,120m-80,0a80,80 0,1 1,160 0a80,80 0,1 1,-160 0"/>
+            <path
+                android:pathData="M194.99,204.89C187.33,205.22 92.11,204.7 92.11,204.7C34.25,151.01 179.21,133.24 89.61,89.14L83.35,95.25L75,75L101.94,76.94L96.55,82.54C208.6,112.72 81.48,169.28 194.99,204.89Z"
+                android:fillColor="#16171B"
+                tools:ignore="VectorPath"/>
+        </group>
+    </group>
+</vector>

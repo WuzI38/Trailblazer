@@ -4,6 +4,7 @@ import android.content.Context
 import com.google.gson.Gson
 import com.google.gson.reflect.TypeToken
 
+// Generate list of trail object based on trails.json file
 object TrailListCreator {
     fun getTrails(context: Context): List<Trail> {
         val filename = "trails.json"
