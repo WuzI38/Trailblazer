@@ -14,5 +14,6 @@ This Android application is designed to provide users with information about var
 
 4. **Record Saving**: Users can save their timer records in the application's database. This allows users to keep track of their progress over time and see how they've improved.
 
-<img width="246" alt="Screens" src="https://github.com/WuzI38/AndroidLab/assets/102658588/cfb7612d-d72a-447f-bf57-1f219ff94a19">
-
+<p align="center">
+  <img width="300" alt="Screens" src="https://github.com/WuzI38/AndroidLab/assets/102658588/cfb7612d-d72a-447f-bf57-1f219ff94a19">
+</p>
